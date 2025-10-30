@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>facebook</title>
+  <style>
+    body{
+      background-color: black;
+    }
+    img{
+      width: 10%;
+      background-color: white;
+      border-radius: 50%;
+   position: absolute;
+transform: translate(-50%,-50%);
+top: 30%;
+left: 50%;
+    }
+    div.duration{
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      position: absolute;
+transform: translate(-50%,-50%);
+top: 40%;
+left: 50%;
+    }
+
+    .active{
+      background-color:  blue;
+      transition:background 0.3s ease-out;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+filter: brightness(100%);
+    }
+    .dot{
+background:  rgb(171, 171, 216);
+width: 10px;
+height: 10px;
+border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <span><img src="facebook.svg" alt=""></span>
+  <div class="duration">
+    <div class="active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <script>
+
+    function changer(){
+      let x=document.getElementById('dot');
+      x.style.background='blue';
+      x.style.transition="all 3s ease ";
+    }
+  </script>
+</body>
+</html>

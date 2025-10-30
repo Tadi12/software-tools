@@ -1,0 +1,93 @@
+body{
+  background-color: rgb(221, 15, 170);
+}
+.container{
+  margin: 0;
+  padding: 25px;
+  border: 2px solid black;
+  width: 250px;
+  height: 300px;
+border-radius: 20px;
+  background-color: aqua;
+  color: black;
+  font-weight: bolder;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  box-shadow: inset 10px 10px  10px rgb(153, 114, 114);
+}
+.top-circle{
+  border: 2px solid black;
+  border-radius: 50%;
+  background-image: url("pexels.jpg");
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 23%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+ #user,#pass{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+#log{
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 70%;
+  position: absolute;
+  width: 100px;
+  border-radius: 20px;
+  background-color: blue;
+  color: white;
+}
+a{
+  transform: translate(-50%,-50%);
+  left: 70%;
+  top: 60%;
+  position: absolute;
+  font-size: 12px;
+}
+h1{
+  text-align: center;
+}
+#log:hover{
+  background-color: darkblue;
+  font-size: 15px;
+}
+@media screen and (min-width:800px){
+ 
+  .container{
+    width: 500px;
+    height: 400px;
+  }
+  #log{
+    padding: 10px 20px;
+  }
+  a{
+    transform: translate(-50%,-50%);
+  left: 75%;
+  top: 60%;
+  position: absolute;
+  font-size: 12px;
+  }
+  .top-circle{
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 16%;
+    position: fixed;
+  }
+  #pass,#user{
+    padding: 10px;
+  }
+
+  #user:hover ,#pass:hover{
+    padding: 15px;
+  }
+}
